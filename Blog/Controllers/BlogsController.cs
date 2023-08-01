@@ -111,6 +111,10 @@ namespace Blog.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Content,Title,Created_date,Updated_date")] Blogs blogs)
         {
+
+            //本日の日付を取得
+            DateTime dt = DateTime.Now.Date;
+
             if (id != blogs.Id)
             {
                 return NotFound();
@@ -118,9 +122,13 @@ namespace Blog.Controllers
 
             if (ModelState.IsValid)
             {
+                var blog = _context.Blogs.Single(x => x.Id == blogs.Id);
                 try
                 {
-                    _context.Update(blogs);
+                    blog.Name = blogs.Name;
+                    blog.Title = blogs.Title;
+                    blog.Content = blogs.Content;
+                    blog.Updated_date = dt;
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)

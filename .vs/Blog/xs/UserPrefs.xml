@@ -1,30 +1,31 @@
 ﻿<Properties StartupConfiguration="{0246584A-F8C0-4E16-A8CA-62EE234EDA63}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Blog/Views/Shared/_Layout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Blog/wwwroot/css/site.css">
     <Files>
-      <File FileName="Blog/wwwroot/css/site.css" Line="44" Column="19" />
-      <File FileName="Blog/Views/Shared/_Layout.cshtml" Line="30" Column="22" />
-      <File FileName="Blog/Views/Blogs/Index.cshtml" Line="11" Column="1" />
-      <File FileName="Blog/Views/Blogs/Delete.cshtml" Line="41" Column="14" />
-      <File FileName="Blog/Views/Blogs/Details.cshtml" Line="33" Column="14" />
-      <File FileName="Blog/Views/Blogs/Edit.cshtml" Line="45" Column="7" />
-      <File FileName="Blog/Views/Shared/Error.cshtml" Line="26" Column="1" />
-      <File FileName="Blog/Controllers/BlogsController.cs" Line="20" Column="10" />
+      <File FileName="Blog/wwwroot/css/site.css" Line="81" Column="17" />
+      <File FileName="Blog/Views/Blogs/Edit.cshtml" Line="11" Column="26" />
+      <File FileName="Blog/Controllers/BlogsController.cs" Line="124" Column="14" />
+      <File FileName="Blog/Views/Blogs/Create.cshtml" />
+      <File FileName="Blog/Program.cs" />
+      <File FileName="Blog/Data/BlogContext.cs" />
+      <File FileName="Blog/Views/Blogs/Index.cshtml" Line="33" Column="38" />
+      <File FileName="Blog/Views/Blogs/Details.cshtml" Line="1" Column="1" />
+      <File FileName="Blog/Views/Blogs/Delete.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Blog" expanded="True">
-            <Node name="Blog" expanded="True">
+            <Node name="Blog">
               <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Blogs" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="_Layout.cshtml" selected="True" />
-                </Node>
               </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
+              <Node name="wwwroot">
+                <Node name="css">
+                  <Node name="site.css" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -35,7 +36,8 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/koki/Projects/Blog/Blog/Controllers/BlogsController.cs" relfile="Blog/Controllers/BlogsController.cs" line="25" column="1" />
+      <Breakpoint file="/Users/koki/Projects/Blog/Blog/Controllers/BlogsController.cs" relfile="Blog/Controllers/BlogsController.cs" line="63" column="1" />
+      <Breakpoint file="/Users/koki/Projects/Blog/Blog/Controllers/BlogsController.cs" relfile="Blog/Controllers/BlogsController.cs" line="123" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.Blog PreferredExecutionTarget="/Applications/Google Chrome.app" />
