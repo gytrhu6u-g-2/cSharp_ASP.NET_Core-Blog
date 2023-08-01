@@ -1,0 +1,45 @@
+@model IEnumerable<Blog.Models.Blogs>
+
+@{
+    ViewData["Title"] = "ブログ一覧";
+}
+
+
+<div class="title">
+    <h1>ブログ一覧</h1>
+</div>
+
+
+
+<div class="blog_container">
+    @foreach (var blog in Model)
+    {
+        <div class="each_blog">
+            <div class="each_container">
+                <div class="titles">
+                    <div class="name_title">
+                        <label class="title_font">@Html.DisplayNameFor(blog => blog.Name)：</label>
+                        <label>@Html.DisplayFor(blogFor => blog.Name)</label>
+                    </div>
+                    <div class="title_title">
+                        <label class="title_font">@Html.DisplayNameFor(blog => blog.Title)：</label>
+                        <label>@Html.DisplayFor(blogFor => blog.Title)</label>
+                    </div>
+                    <div class="updated_title">
+                        <label class="title_font">@Html.DisplayNameFor(blog => blog.Updated_date)</label>
+                        <label>@Html.DisplayFor(blogFor => blog.Updated_date)</label>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>@Html.DisplayFor(blogFor => blog.Content)</p>
+                </div>
+                <div class="btn_content">
+                    <div class="btns">
+                        <a asp-action="ToDeletePage" asp-route-id="@blog.Id" class="delete_btn">削除</a>
+                        <a asp-action="Edit" asp-route-id="@blog.Id" class="edit_btn">編集</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
